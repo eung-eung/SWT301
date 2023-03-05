@@ -12,7 +12,5 @@
   "devDependencies": {
     "jest": "^29.4.3"
   },
-  "dependencies": {
-    "node-fetch": "^3.3.0"
-  }
+  "dependencies": {}
 }
