@@ -1,6 +1,6 @@
 // const getCity = require('./wardDistrictAndCity')
 describe.each([
-    { wardName: "Long Thạnh Mỹ", city: "Hồ Chí inh", expectValue: true },
+    { wardName: "Long Thạnh Mỹ", city: "Hồ Chí Minh", expectValue: true },
     { wardName: "Hiệp Hòa", city: "Đồng Nai", expectValue: true },
     { wardName: "Hiệp Hòa", city: "Hồ Chí Minh", expectValue: false },
     { wardName: "Vĩnh Phúc", city: "Hà Nội", expectValue: true }
