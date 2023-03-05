@@ -1,6 +1,6 @@
 // var existCity = true
 function getCity(wardName, cityName) {
-    fetch(`http://localhost:8080/EcommercePlatformm/MainController?btnAction=address&addressAction=getCityByWardName&wardName=${wardName}`)
+    fetch(`http://27.64.30.83:8080/EcommercePlatformm/MainController?btnAction=address&addressAction=getCityByWardName&wardName=${wardName}`)
         .then(res => res.json())
         .then(city => {
             let name = city.map(c => {
