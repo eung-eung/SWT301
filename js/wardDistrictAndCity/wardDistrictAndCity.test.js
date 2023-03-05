@@ -6,7 +6,7 @@ describe.each([
     { wardName: "Vĩnh Phúc", city: "Hà Nội", expectValue: true }
 ])('$wardName in $city is $expectValue', ({ wardName, city, expectValue }) => {
     test(`return ${city}: ${expectValue}`, () => {
-        return fetch(`http://localhost:8080/EcommercePlatformm/MainController?btnAction=address&addressAction=getCityByWardName&wardName=${wardName}`)
+        return fetch(`http://27.64.30.83:8080/EcommercePlatformm/MainController?btnAction=address&addressAction=getCityByWardName&wardName=${wardName}`)
             .then(res => res.json())
             .then(cities => {
                 let name = cities.map(c => {
