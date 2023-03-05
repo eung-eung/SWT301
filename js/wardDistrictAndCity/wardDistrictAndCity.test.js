@@ -1,5 +1,5 @@
 // const getCity = require('./wardDistrictAndCity')
-import fetch from "node-fetch";
+// const fetch = require("node-fetch");
 describe.each([
     { wardName: "Long Thạnh Mỹ", city: "Hồ Chí Minh", expectValue: true },
     { wardName: "Hiệp Hòa", city: "Đồng Nai", expectValue: true },
