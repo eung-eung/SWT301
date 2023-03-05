@@ -4,6 +4,7 @@
 describe.each([
     { wardName: "Long Thạnh Mỹ", city: "Hồ Chí Minh", expectValue: true },
     { wardName: "Hiệp Hòa", city: "Đồng Nai", expectValue: true },
+    { wardName: "Hiệp Hòa", city: "Hồ Chí Minh", expectValue: true },
     { wardName: "Hiệp Hòa", city: "Hồ Chí Minh", expectValue: false },
     { wardName: "Vĩnh Phúc", city: "Hà Nội", expectValue: true }
 ])('$wardName in $city is $expectValue', ({ wardName, city, expectValue }) => {
