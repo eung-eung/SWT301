@@ -24,7 +24,7 @@
 test.each([
     { wardName: "Long Thạnh Mỹ", city: "Hồ Chí Minh" },
     { wardName: "Hiệp Hòa", city: "Đồng Nai" },
-    // { wardName: "Hiệp Hòa", city: "Hồ Chí Minh" },
+    { wardName: "Hiệp Hòa", city: "Hồ Chí Minh" },
     { wardName: "Hiệp Hòa", city: "Quảng Nam" },
     { wardName: "Vĩnh Phúc", city: "Hà Nội" }
 ])
