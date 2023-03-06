@@ -1,4 +1,4 @@
-const checkVietNamePhoneNumber = require("./checkPhoneNumber");
+const checkVietNamesePhoneNumber = require("./checkPhoneNumber");
 
 //test for right argument
 const testCasesForRightArgument = [
@@ -9,7 +9,7 @@ const testCasesForRightArgument = [
 ];
 testCasesForRightArgument.forEach((testCase) => {
     test(`wrong testCase at ${testCase.phoneNumber} in testCasesForRightArgument`, () => {
-        expect(checkVietNamePhoneNumber(testCase.phoneNumber)).toBe(testCase.expectedResult);
+        expect(checkVietNamesePhoneNumber(testCase.phoneNumber)).toBe(testCase.expectedResult);
     });
 });
 
@@ -40,7 +40,7 @@ const testCasesForWrongArgument = [
 testCasesForWrongArgument.forEach((testCase) => {
     test(`wrong testCase at ${testCase.phoneNumber} in testCasesForWrongArgument`, () => {
         expect(() => {
-            checkVietNamePhoneNumber(testCase.phoneNumber)
+            checkVietNamesePhoneNumber(testCase.phoneNumber)
         }).toThrow(testCase.expectedError);
     });
 });

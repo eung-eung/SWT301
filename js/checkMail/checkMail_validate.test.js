@@ -1,19 +1,14 @@
-const checkMail = require('./checkMail_validate')
+const checkMail = require("./checkMail_validate");
 
-describe('Test mail', () => {
-    test('case true format mail', () => {
-        var stringName = 'a@gmail.com'
-        expect(checkMail(stringName)).toBe(true)
-        expect(stringName).toMatch(/^a/)
-    }
-    )
-    test('case false format mail', () => {
-        var stringName = 'agmailcom'
-        expect(checkMail(stringName)).toBe(false)
-        expect(stringName).toMatch(/^a/)
-    }
-    )
-
-})
-
-
+describe("Test mail", () => {
+    test("case true format mail", () => {
+        const email = "a@gmail.com";
+        expect(checkMail(email)).toBe(true);
+        expect(email).toMatch(/^a/);
+    });
+    test("case false format mail", () => {
+        const email = "agmailcom";
+        expect(checkMail(email)).toBe(false);
+        expect(email).toMatch(/^a/);
+    });
+});

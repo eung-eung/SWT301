@@ -1,4 +1,4 @@
-function checkVietNamePhoneNumber(phoneNumber) {
+function checkVietNamesePhoneNumber(phoneNumber) {
     if (
         phoneNumber.length === 12 &&
         phoneNumber.charAt(0) === '+' &&
@@ -10,4 +10,4 @@ function checkVietNamePhoneNumber(phoneNumber) {
         throw new Error('Illegal argument exception');
     }
 }
-module.exports = checkVietNamePhoneNumber
+module.exports = checkVietNamesePhoneNumber

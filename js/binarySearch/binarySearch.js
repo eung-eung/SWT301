@@ -1,26 +1,27 @@
 function binarySearch(array, x) {
+    array.sort(function (a, b) {
+        return a - b;
+    });
 
-    array.sort(function (a, b) { return a - b });
-
-    let left = 0
-    let right = array.length - 1
+    let left = 0;
+    let right = array.length - 1;
     // console.log(left)
     // console.log(right)
-    let mid
+    let mid;
     while (right >= left) {
         // console.log(array)
         mid = left + Math.floor((right - left) / 2);
         // mid = (left + right) / 2
         if (array[mid] == x) {
-            return mid
+            return mid;
         }
         if (array[mid] > x) {
-            right = mid - 1
+            right = mid - 1;
         } else {
-            left = mid + 1
+            left = mid + 1;
         }
     }
-    return -1
+    return -1;
 }
-console.log(binarySearch([2, 1, 3, 4, 5], 0))
-module.exports = binarySearch 
+console.log(binarySearch([2, 1, 3, 4, 5], 0));
+module.exports = binarySearch;
